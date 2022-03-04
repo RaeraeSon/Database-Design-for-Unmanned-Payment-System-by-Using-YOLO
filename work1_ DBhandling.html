@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Hyeong Rae Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+        <div class="frame">
+        <nav class="navigator">
+            <a href="index.html"><h3 class="site-name">포트폴리오</h3></a>
+            <ul>
+                <li><a class="nav-menu" href="basics.html">INFO</a></li>
+                <li><a class="nav-menu" href="">WORK</a></li>
+                
+            </ul>
+          
+        </nav>
+        <h3 class="work-main-title">Database Design for Unmanned Payment System by Using YOLO</h3>
+        <nav class="navigator_work1">
+            <ul>
+                <li><a class="nav-menu" href="work1_main.html">프로젝트 배경</a></li>
+                <li><a class="nav-menu" href="work1_purpose.html">프로젝트 목적</a></li>
+                <li><a class="nav-menu" href="work1_composition.html">무인결제 시스템 구성</a></li>
+                <li><a class="nav-menu" href="work1_ handling.html">영상 데이터 처리</a></li>
+                <li><a class="nav-menu" href="work1_ DBhandling.html">데이터베이스 구성 및 처리</a></li>
+                
+            </ul>
+          
+        </nav>
+       
+        <div class="work1-frame">        
+                <img src="work1_DB_pic.jpg" width="800px">
+                <p >
+                데이터베이스를 구성하고 있는 세 개의 개체가 있습니다<br>
+                Customer 개체와 Product개체는 Payment 개체와 각각 Interest, Select 관계를 갖습니다.    
+                </p>
+                <br><br>
+                <img src="work1_ DBhandling_pic.jpg" width="800px">
+                <p >
+                고객이 매장 안에 들어오면 RFID를 통해 받아온 데이터 값과 고객의 ID값을 비교하여 고객들을 식별하고,<br>
+                해당 고객의 Chk_in 속성을 True로 수정합니다. Chk_in 속성은 고객이 매장을 나갈 때 다시 False로 수정합니다.<br>
+                만약 고객의 ID값이 데이터베이스 내에 존재하지 않거나 올바르지 않은 데이터 값이 들어오면<br>Chk_in 속성은 수정되지 않고, False로 유지됩니다.
+                고객이 상품 영역에 접근할 때<br> Payment 개체의 Interest_chk 속성을 True로 수정합니다.<br>
+                이 상태에서 고객이 해당 상품을 가져간다면, Payment 개체에 결제 정보가 저장되고 <br>
+                해당 상품의 Quantity속성을 감소시키며, Interest_chk속성이 False로 수정됩니다.<br>
+                반면에 고객이 상품을 가져가지 않는다면, 다른 행동을 취하지 않고, Interest_chk속성만 False로 다시 수정합니다. 
+                </p>
+                
+        </div>
+
+       
+
+        <footer class="work-footer">
+            <h3 class="contact">Contact Me</h3>
+            <p1>Phone : 010-2583-7103</p1>
+            <br>
+            <p1>E-mail : armyrae@naver.com</p1>
+        </footer>
+        
+        
+    </div>
+    
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
