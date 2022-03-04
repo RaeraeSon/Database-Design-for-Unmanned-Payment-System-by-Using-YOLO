@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Hyeong Rae Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+        <div class="frame">
+        <nav class="navigator">
+            <a href="index.html"><h3 class="site-name">포트폴리오</h3></a>
+            <ul>
+                <li><a class="nav-menu" href="basics.html">INFO</a></li>
+                <li><a class="nav-menu" href="">WORK</a></li>
+                
+            </ul>
+          
+        </nav>
+        <h3 class="work-main-title">Database Design for Unmanned Payment System by Using YOLO</h3>
+        <nav class="navigator_work1">
+            <ul>
+                <li><a class="nav-menu" href="work1_main.html">프로젝트 배경</a></li>
+                <li><a class="nav-menu" href="work1_purpose.html">프로젝트 목적</a></li>
+                <li><a class="nav-menu" href="work1_composition.html">무인결제 시스템 구성</a></li>
+                <li><a class="nav-menu" href="work1_ handling.html">영상 데이터 처리</a></li>
+                <li><a class="nav-menu" href="work1_ DBhandling.html">데이터베이스 구성 및 처리</a></li>
+            </ul>
+          
+        </nav>
+        <div class="work1-frame">
+            
+            
+                <img src="thumbnail1.jpg" width="800px">
+                <p>무인 결제 시스템의 구성은 이미지와 같습니다. 매장 입장 시 RFID 혹은 스마트폰 근거리 무선 통신(NFC)기능을 활용하여<br>
+                매장 내 고객을 식별합니다. 식별된 고객에 대하여 라즈베리파이의 카메라 모듈로 영상 데이터를 수집합니다.<br>
+                그리고 이 데이터를 YOLO를 통해 분석하고, 분석된 영상 결과를 데이터베이스에 저장합니다.<br>
+                데이터베이스에서는 매장 내 고객 식별, 상품 선택 여부, 최종 결제에 따른 데이터 저장이 이루어집니다.
+                </p>
+                <img src="work1_YOLO1.jpg" width="800px">
+                <p>
+                    YOLO를 선택한 이유는 다양한 상황에서 소요된 시간 대비 높은 정확도를 보여주며, CNN등 여러 신경망과 비교해<br>
+                    전체 이미지를 직접 학습해 실제 응용 프로그램에서 활용하기에 적합하기 때문입니다.<br>
+                    또한, 검출 성능에 직접적으로 대응하는 손실 함수에 대해 훈련하고, 그에 따라 처리시간 측면에서 실시간 <br>
+                    객체 검출이 가능합니다. 다른 검출기에 비해 객체 표현을 보다 일반화하여 빠르고 강력한 검출이 가능하기에<br>객체 검출에서 보다 효율적이라고 판단하여 선택하게 되었습니다.
+                </p>
+                
+
+                
+                
+            
+        </div>
+
+        </div>
+
+       
+
+       
+
+        <footer class="work-footer">
+            <h3 class="contact">Contact Me</h3>
+            <p1>Phone : 010-2583-7103</p1>
+            <br>
+            <p1>E-mail : armyrae@naver.com</p1>
+        </footer>
+        
+        
+    </div>
+    
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
