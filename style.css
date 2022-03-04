@@ -104,7 +104,7 @@ a:hover{
 .profile-section{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
     margin:100px 100px;
 }
@@ -124,6 +124,21 @@ a:hover{
     font-weight: 300;
     font-size: 16px;
     margin-bottom: 40px;
+}
+
+.introduction2>h2{
+    margin-top:200px;
+    font-size: 35px;
+    margin-left:50px;
+}
+
+.introduction2>p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-top:43px;
 }
 
 .value-menu{
@@ -232,11 +247,11 @@ a:hover{
 #name1{
     font-size:50px;
     position:relative;
-    right: 70px;
+    /* right: 70px; */
 }
 
 #name2{
     font-size:50px;
     position:relative;
-    left: 70px;
+    /* left: 400px; */
 }
