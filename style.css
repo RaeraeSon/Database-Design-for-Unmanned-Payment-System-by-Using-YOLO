@@ -258,6 +258,14 @@ a:hover{
     font-size: 16px;
     margin:0px;
 }
+
+.value-exp-bold{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin:0px;
+    font-weight: bold;
+}
 /* INFO 페이지 */
 
 
