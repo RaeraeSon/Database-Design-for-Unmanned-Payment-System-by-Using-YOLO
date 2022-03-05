@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son Hyeong Rae Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+        <div class="frame">
+        <nav class="navigator">
+            <a href="index.html"><h3 class="site-name">포트폴리오</h3></a>
+            <ul>
+                <li><a class="nav-menu" href="basics.html">INFO</a></li>
+                <li><a class="nav-menu" href="work_main.html">WORK</a></li>
+                
+            </ul>
+          
+        </nav>
+        <h3 class="work-main-title">Blockchain-based online voting system</h3>
+        <nav class="navigator_work1">
+            <ul>
+                <li><a class="nav-menu" href="work2_main.html">프로젝트 배경 및 목적</a></li>
+                <li><a class="nav-menu" href="work2_gas.html">스마트컨트랙트와 가스</a></li>
+                <li><a class="nav-menu" href="work2_flow.html">흐름도 및 구현 기능테스트</a></li>
+                <li><a class="nav-menu" href="work2_result.html">실행결과</a></li>
+                <li><a class="nav-menu" href="work1_ DBhandling.html">데이터베이스 구성 및 처리</a></li>
+            </ul>
+          
+        </nav>
+        
+        <div class="work1-frame">
+            <img src="work2_flow.jpg" width="800px" > 
+            <p>
+                블록체인 투표 과정은 일반적인 스마트 컨트랙트 기반의 DApp 흐름을 따릅니다.<br>
+                디앱(DApp)이란 Decentralized Application의 줄임말로 탈 중앙화 어플리케이션라는 뜻이며<br>
+                블록체인 기술을 활용하여 중앙 서버 없이 네트워크상에 정보를 분산하여 저장 및 구동하는 앱입니다.<br>
+                저희 프로젝트도 DApp을 구현하여 활용합니다. <br>
+                우선 투표의 주최자는 투표에 규칙이 담긴 스마트 컨트랙트를 작성하여 블록체인 저장소인 GANACHE 네트워크에 배포하며 이 과정에서 가스가 소모됩니다.<br>
+                사용자는 크롬브라우저에서 구현된 서버에 접속하고 METAMASK에 로그인 하여 본인의 계정을 서버와 연결하여 투표 권한을 얻습니다.<br>
+                투표를 실행하면 미리 작성된 스마트 컨트랙트에 의해 투표하는 과정이 계약되고 해당 과정에서 역시 요구하는 가스를 소모하며 계약이 성사됩니다.
+
+            </p>
+            
+            <img src="work2_flow2.jpg" width="800px" > 
+            <p>
+                우선 프론트에 대한 구현 기능은 후보자의 정보를 나타내는 부분과 투표 할 수 있는 부분을 구현하였습니다.<br>
+                그리고 메타마스크에 연결된 가나쉬 계정 중 하나로 투표가 진행되기 때문에 해당 계정을 읽어와 화면에 표시할 수 있는 기능 또한 구현하였습니다.<br>
+                다음으로는 비즈니스 로직을 나타내는 백에 대한 구현 기능은 모두 투표와 관련되어 있습니다. <br>투표 기능으로 투표하기, 이중투표방지, 중복투표 방지에 대한 기능이 구현되어 있습니다.<br>
+                우측에 보이는 이미지는 백에 대한 기능들을 테스트한 결과입니다.<br>
+                첫 번째로 후보자가 등록을 했을 때 정상적으로 총 후보자의 인원과 일치하는지에 대한 테스트입니다.<br>
+                두 번째로 후보자가 등록할 경우 후보자의 고유 번호인 기호 번호를 부여받게 되는데 각 후보자별로 후보자의 기호번호와 후보자의 이름이 일치하는지에 대한 테스트 입니다.<br>
+                세 번째로 투표하기 기능을 수행했을 때 정상적으로 후보자의 투표수가 +1씩 증가되는지와 투표되지 않은 후보자는 그 값을 유지하는지 검증하는 테스트 입니다.<br>
+                네 번째로 이중투표방지 및 중복투표방지에 대한 테스트입니다. 투표를 한번이라도 진행하게 되면 해당 후보자에 매칭되는 배열을 true값으로 만들고,<br> 투표를 진행할 때마다 해당 배열을 검사해 true인 경우에 투표가 진행되지 않는지에 대한 테스트 입니다.
+
+            </p>
+        </div>
+        
+       
+
+       
+
+        <footer class="work-footer">
+            <h3 class="contact">Contact Me</h3>
+            <p1>Phone : 010-2583-7103</p1>
+            <br>
+            <p1>E-mail : armyrae@naver.com</p1>
+        </footer>
+        
+        
+    </div>
+    
+
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
